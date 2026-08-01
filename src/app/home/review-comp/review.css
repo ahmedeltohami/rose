@@ -1,0 +1,15 @@
+.cover{
+    background-image: url("/images/Birthday background.svg");
+
+}
+.container{
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 136px;
+}
+@media (max-width:768px){
+.col-12{
+  padding-left: 50px;
+}
+}
+

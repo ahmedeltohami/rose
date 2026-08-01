@@ -1,0 +1,23 @@
+.hero-section .container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.hero-section .container .row{
+  display: flex;
+  margin-bottom: 24px;
+}
+.hero-section img{
+    width: 100%;
+    display: block;
+}
+.hero-section .container .services{
+  background-color: rgba(254, 237, 247, 1);
+    padding: 25px;
+  gap: 95px;
+  justify-content: center;
+}
+.hero-section .container .services img{
+  max-width: 200px;
+}

@@ -1,0 +1,33 @@
+.container{
+  padding-top: 86px;
+  padding-left: 40px;
+  padding-right: 80px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+}
+
+.container img{
+    max-width:200px;
+    cursor: pointer;
+}
+@media (max-width:768px)  {
+  .container {
+    padding-left: 0;
+    padding-right: 4px;
+    gap:0px;
+  }
+  .container img{
+    max-width:150px;
+}
+
+
+}

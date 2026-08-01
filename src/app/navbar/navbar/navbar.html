@@ -1,0 +1,38 @@
+<header class="header">
+  <div class="header-container">
+
+    <div class="logo">
+      <img src="/images/Group 3.png" alt="Logo" routerLink="/home" (click)="logout()">
+    </div>
+
+    <nav>
+      <a routerLink="/home" routerLinkActive="active-link" >Home</a>
+      <a routerLink="/category" routerLinkActive="active-link">All Category</a>
+    </nav>
+
+    <div class="icons d-flex align-items-center justify-content-center">
+      <img src="/images/Icon(1).svg" alt="">
+
+      @if (!auth.isLoggedIn()) {
+
+    <img src="\images\login.svg"(click)="openLogin()" >
+
+} @else {
+
+
+  <!-- <button class="logout-btn" (click)="logout()">
+    Logout
+  </button> -->
+  <img src="\images\Item → Link(111).svg" class="ps-1">
+  <img src="\images\Item → Link12.svg" class="ps-1">
+
+}
+
+    </div>
+
+    <button class="menu-btn">
+      <i class="bi bi-list"></i>
+    </button>
+
+  </div>
+</header>

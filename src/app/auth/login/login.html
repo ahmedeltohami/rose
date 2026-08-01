@@ -1,0 +1,54 @@
+@if(modal.loginOpen()){
+
+<div class="login-overlay" (click)="close()">
+
+<div class="login-modal" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="close()">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <h2>Login To Your Account</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+      <input
+        type="email"
+        placeholder="Email"
+        formControlName="email">
+
+      <input
+        type="password"
+        placeholder="Password"
+        formControlName="password">
+
+      <div class="login-options">
+
+        <label class="remember">
+
+          <input
+            type="checkbox"
+            formControlName="rememberMe">
+
+          <span>Remind me</span>
+
+        </label>
+
+
+
+      </div>
+
+
+
+      <button class="login-btn" type="submit">
+
+        Login
+
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+}

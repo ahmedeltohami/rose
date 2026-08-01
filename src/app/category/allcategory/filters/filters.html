@@ -1,0 +1,170 @@
+<div class="filter-card">
+
+  <h6>Search</h6>
+
+  <input
+      class="form-control"
+      type="text"
+      placeholder="Search By The Name">
+
+</div>
+<div class="filter-card">
+
+  <h6>Category</h6>
+
+  <hr>
+
+  @for(category of categories; track category){
+
+    <label class="filter-item">
+
+      <input type="checkbox">
+
+      <span>{{category}}</span>
+
+      <small>(8)</small>
+
+    </label>
+
+  }
+
+</div>
+<div class="filter-card">
+
+  <h6>Brands</h6>
+
+  <hr>
+
+  @for(brand of brands; track brand){
+
+    <label class="filter-item">
+
+      <input type="checkbox">
+
+      <span>{{brand}}</span>
+
+      <small>(8)</small>
+
+    </label>
+
+  }
+
+</div>
+<div class="filter-card">
+
+  <h6>Price Rating</h6>
+
+  <hr>
+
+  <div class="price-range">
+
+    <span>${{minPrice}}</span>
+
+    <span>${{maxPrice}}</span>
+
+  </div>
+
+  <input
+    type="range"
+    class="form-range"
+    min="0"
+    max="500"
+    [(ngModel)]="maxPrice">
+
+</div>
+
+
+<div class="filter-card">
+
+  <h6>Sales</h6>
+
+  <hr>
+
+  <label class="filter-item">
+    <input type="checkbox">
+    On Sale
+  </label>
+
+  <label class="filter-item">
+    <input type="checkbox">
+    In Stock
+  </label>
+
+  <label class="filter-item">
+    <input type="checkbox">
+    Out Of Stock
+  </label>
+
+  <label class="filter-item">
+    <input type="checkbox">
+    Discount
+  </label>
+
+</div>
+<div class="filter-card">
+
+  <h6>Ratings</h6>
+
+  <hr>
+
+  @for(rate of ratings; track rate){
+
+    <label class="filter-item">
+
+      <input type="checkbox">
+
+      <span class="stars">
+
+        @for(star of [].constructor(rate); track $index){
+          ⭐
+        }
+
+      </span>
+
+    </label>
+
+  }
+
+</div>
+
+<div class="filter-card">
+
+  <h6>Colors</h6>
+
+  <hr>
+
+  <div class="colors">
+
+    @for(color of colors; track color){
+
+      <span
+        class="color-circle"
+        [style.background]="color">
+      </span>
+
+    }
+
+  </div>
+
+</div>
+
+
+<div class="filter-card">
+
+  <h6>Sizes</h6>
+
+  <hr>
+
+  @for(size of sizes; track size){
+
+    <label class="filter-item">
+
+      <input type="checkbox">
+
+      {{size}}
+
+    </label>
+
+  }
+
+</div>

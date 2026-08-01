@@ -1,0 +1,62 @@
+<div class="row g-4">
+
+@for(product of products; track product._id){
+
+<div class="col-lg-4 col-md-6">
+
+<div class="product-card"
+[routerLink]="['/product',product._id]"
+>
+
+<div class="product-image">
+
+<img
+[src]="product.imgCover"
+[alt]="product.title">
+
+</div>
+
+<h6>
+
+{{product.title}}
+
+</h6>
+
+<div class="stars">
+
+⭐⭐⭐⭐⭐
+
+</div>
+
+<div class="card-footer">
+
+<div>
+
+<span class="new">
+
+{{product.priceAfterDiscount}}$
+
+</span>
+
+<span class="old">
+
+{{product.price}}$
+
+</span>
+
+</div>
+
+<button class="cart-btn">
+
+<img src="images/Button - Add To Cart.svg">
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+}
+</div>

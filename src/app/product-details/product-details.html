@@ -1,0 +1,122 @@
+@if(product){
+
+<div class="container py-5">
+
+  <div class="row">
+
+    <!-- الصور -->
+    <div class="col-lg-6">
+
+      <div class="main-image">
+
+        <img
+          [src]="product.imgCover"
+          class="img-fluid w-100">
+
+      </div>
+
+     <div class="row mt-3">
+
+  <div class="col-3">
+    <img
+      [src]="product.imgCover"
+      class="img-fluid border rounded">
+  </div>
+
+  <div class="col-3">
+    <img
+      [src]="product.imgCover"
+      class="img-fluid border rounded">
+  </div>
+
+  <div class="col-3">
+    <img
+      [src]="product.imgCover"
+      class="img-fluid border rounded">
+  </div>
+
+  <div class="col-3">
+    <img
+      [src]="product.imgCover"
+      class="img-fluid border rounded">
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- البيانات -->
+
+    <div class="col-lg-6">
+
+      <h2 class="fw-bold">
+
+        {{product.title}}
+
+      </h2>
+
+      <div class="mb-3">
+
+        <span class="text-decoration-line-through text-secondary">
+
+          {{product.price + 150}}$
+
+        </span>
+
+        <span class="text-danger fs-3 fw-bold ms-3">
+
+          {{product.price}}$
+
+        </span>
+
+      </div>
+
+      <p class="text-muted">
+
+        {{product.description}}
+
+      </p>
+
+      <div class="mt-4">
+
+        ⭐⭐⭐⭐⭐
+
+      </div>
+
+      <div class="mt-4">
+
+        <strong>Stock :</strong>
+
+        {{product.quantity}}
+
+      </div>
+
+      <div class="mt-2">
+
+        <strong>Category :</strong>
+
+        {{product.category.name}}
+
+      </div>
+
+      <div class="mt-2">
+
+        <strong>Brand :</strong>
+
+        {{product.brand?.name}}
+
+      </div>
+
+      <button
+        class="btn btn-lg btn-danger mt-4">
+
+        Add To Cart
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+}

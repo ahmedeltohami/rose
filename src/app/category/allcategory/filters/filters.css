@@ -1,0 +1,128 @@
+.filter-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    border:1px solid #f2f2f2;
+
+    margin-bottom:20px;
+
+}
+.filter-card input{
+  border-radius: 20px;
+}
+
+.filter-card h6{
+
+    font-weight:700;
+
+    color:#1D1A5B;
+
+    margin-bottom:15px;
+
+}
+.filter-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    color:#777;
+
+}
+
+.filter-item small{
+
+    margin-left:auto;
+
+    color:#999;
+
+}
+
+.filter-card hr{
+
+    margin:15px 0;
+
+    color:#ddd;
+
+}
+span{
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+vertical-align: middle;
+
+}
+
+
+.price-range{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    color:#FF2AA1;
+
+    font-weight:600;
+
+}
+
+
+
+.form-range{
+
+    accent-color:#FF2AA1;
+
+}
+
+
+.stars{
+
+    color:rgba(248, 43, 169, 1);
+
+    letter-spacing:2px;
+
+}
+
+
+
+.colors{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+.color-circle{
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.color-circle:hover{
+
+    transform:scale(1.2);
+
+}

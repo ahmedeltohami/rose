@@ -1,0 +1,32 @@
+.first{
+  margin-bottom: 24px;
+}
+.container .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 43px;
+}
+.container .text p{
+  margin-bottom: 8px;
+font-weight: 700;
+font-family: 'roboto';
+font-style: Bold;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+
+  color: rgba(248, 43, 169, 1);
+
+}
+.container .text h3{
+font-weight: 700;
+font-style: Bold;
+font-size: 30px;
+line-height: 100%;
+vertical-align: middle;
+text-transform: capitalize;
+
+}

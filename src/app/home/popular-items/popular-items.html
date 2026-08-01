@@ -1,0 +1,97 @@
+<div class="container">
+<h3>Popular items</h3>
+<div class="d-none d-lg-block">
+  <div class="row g-4">
+
+    @for(product of products.slice(2,14); track product.id){
+
+      <div class="col-lg-3">
+
+        <div class="product-card"
+        [routerLink]="['/product',product.id]"
+>
+
+          <div class="product-image">
+            <img [src]="product.imgCover" [alt]="product.title">
+          </div>
+
+          <h5>{{product.title}}</h5>
+
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+
+          <div class="card-footer">
+
+            <div class="price">
+
+              <span class="new">{{product.priceAfterDiscount}}$</span>
+
+              <span class="old">{{product.price}}$</span>
+
+            </div>
+
+            <button class="cart-btn">
+              <img src="images/Button - Add To Cart.svg">
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+</div>
+<div class="d-block d-lg-none position-relative">
+
+  <button class="slider-btn left" (click)="prev()">
+    <
+  </button>
+
+  <div class="row">
+
+    @for(product of visibleProducts; track product.id){
+
+      <div class="col-12">
+
+        <div class="product-card">
+
+          <div class="product-image">
+            <img [src]="product.imgCover">
+          </div>
+
+          <h5>{{product.title}}</h5>
+
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+
+          <div class="card-footer">
+
+            <div class="price">
+
+              <span class="new">{{product.priceAfterDiscount}}$</span>
+
+              <span class="old">{{product.price}}$</span>
+
+            </div>
+
+            <button class="cart-btn">
+              <img src="images/Button - Add To Cart.svg">
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+  <button class="slider-btn right" (click)="next()">
+    >
+  </button>
+
+</div>
+</div>

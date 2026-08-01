@@ -1,0 +1,117 @@
+.newsletter{
+    background-image: url("/images/imageui.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+}
+
+.footer-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.footer-links li{
+    list-style: none;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #1D1A5B;
+    font-weight: 600;
+}
+
+.subscribe-box{
+    display: flex;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+}
+
+.subscribe-box input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 18px 24px;
+}
+
+.subscribe-box button{
+    background: #FF2AA1;
+    color: white;
+    border: none;
+    padding: 18px 30px;
+}
+
+
+/* ================= Mobile ================= */
+
+@media (max-width: 576px) {
+
+  .newsletter {
+    padding: 50px 20px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 10px;
+    justify-items: center;
+    padding: 0;
+    margin: 0 0 30px;
+  }
+
+  .footer-links li {
+    list-style: none;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* يخلي Policy و FAQS في النص */
+  .footer-links li:nth-child(5) {
+    grid-column: 2;
+  }
+
+  .footer-links li:nth-child(6) {
+    grid-column: 3;
+  }
+
+  .newsletter h2 {
+    font-size: 34px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .newsletter p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .subscribe-box {
+    max-width: 100%;
+    height: 60px;
+    border-radius: 40px;
+  }
+
+  .subscribe-box input {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .subscribe-box button {
+    font-size: 16px;
+    padding: 0 25px;
+    white-space: nowrap;
+  }
+}

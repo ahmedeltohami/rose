@@ -1,0 +1,47 @@
+.container{
+  margin-top: 80px;
+}
+.main-image{
+
+border:1px solid #eee;
+
+padding:20px;
+
+border-radius:15px;
+
+}
+
+
+.main-image img{
+
+height:500px;
+
+object-fit:contain;
+cursor: pointer;
+
+}
+
+
+.col-3 img{
+
+height:90px;
+
+cursor:pointer;
+
+object-fit:cover;
+
+padding:5px;
+
+}
+
+button{
+
+background:#ff2ea6;
+
+border:none;
+
+padding:12px 30px;
+
+border-radius:8px;
+
+}
