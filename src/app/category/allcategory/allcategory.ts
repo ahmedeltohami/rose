@@ -5,7 +5,7 @@ import { Footer } from "../../home/footer/footer";
 
 @Component({
   selector: 'app-allcategory',
-  imports: [Filters, ProductsGrid, Footer],
+  imports: [Filters, ProductsGrid],
   templateUrl: './allcategory.html',
   styleUrl: './allcategory.css',
 })
